@@ -9,11 +9,7 @@ import {
 } from "preact-heroicons";
 import { tw } from "twind";
 
-type slideprops = {
-  slides: string;
-};
-
-const ImageSlider = ({ slides }: slideprops) => {
+const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
