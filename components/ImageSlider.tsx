@@ -2,18 +2,23 @@
 import { useState } from "preact/hooks";
 import { SliderData } from "./SliderData.tsx";
 import { h } from "preact";
+
 import {
   ChevronDoubleLeftSolid,
   ChevronDoubleRightSolid,
 } from "preact-heroicons";
 import { tw } from "twind";
 
-const ImageSlider = ({ slides }) => {
+type slideprops = {
+  slides: string;
+};
+
+const ImageSlider = ({ slides }: slideprops) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent(current + 1);
   };
 
   const prevSlide = () => {
@@ -26,8 +31,8 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div>
-      <ChevronDoubleLeftSolid class="tw`w-4`" />
-      <ChevronDoubleRightSolid class="tw`w-4`" />
+      <button onClick={nextSlide}>Click me</button>
+      {current}
       {SliderData.map((slide, index) => {
         return (
           <div

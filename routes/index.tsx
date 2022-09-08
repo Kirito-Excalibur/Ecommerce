@@ -4,6 +4,8 @@ import { tw } from "twind";
 import ImageSlider from "../components/ImageSlider.tsx";
 import { SliderData } from "../components/SliderData.tsx";
 
+
+
 export default function Home() {
   return (
     <div
