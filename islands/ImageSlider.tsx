@@ -1,21 +1,11 @@
 /** @jsx h */
 import { useState } from "preact/hooks";
-import { SliderData } from "./SliderData.tsx";
+import { SliderData } from "../components/SliderData.tsx";
 import { h } from "preact";
 
-import {
-  ChevronDoubleLeftSolid,
-  ChevronDoubleRightSolid,
-} from "preact-heroicons";
-import { tw } from "twind";
-
-const ImageSlider = ({ slides }) => {
+export default function ImageSlider({slides}) {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
-
-  const nextSlide = () => {
-    setCurrent(current + 1);
-  };
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
@@ -27,7 +17,13 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div>
-      <button onClick={nextSlide}>Click me</button>
+      <button
+        onClick={() => {
+          current + 1;
+        }}
+      >
+        Click me
+      </button>
       {current}
       {SliderData.map((slide, index) => {
         return (
@@ -45,4 +41,4 @@ const ImageSlider = ({ slides }) => {
   );
 };
 
-export default ImageSlider;
+
