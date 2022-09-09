@@ -67,7 +67,7 @@ export default function Home() {
           </a>
         </span>
       </div>
-      <div id="nav-2" class={tw``}>
+      <div id="nav-2" style={"box-shadow: 1 0.5px 2 2 black;"} class={tw`pb-5`}>
         <ul class={tw`flex space-x-4`}>
           <li class={tw``}>
             <a
@@ -160,7 +160,7 @@ export default function Home() {
         </ul>
       </div>
       <div>
-        <ImageSlider  slides={SliderData} />
+        <ImageSlider slides={SliderData} />
       </div>
     </div>
   );
