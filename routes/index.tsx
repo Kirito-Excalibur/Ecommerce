@@ -160,7 +160,7 @@ export default function Home() {
         </ul>
       </div>
       <div>
-        <ImageSlider slides={SliderData} />
+        <ImageSlider  slides={SliderData} />
       </div>
     </div>
   );

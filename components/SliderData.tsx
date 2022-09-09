@@ -21,3 +21,4 @@ export const SliderData = [
     }
   ];
   
+const length=SliderData.length
