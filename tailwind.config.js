@@ -1,8 +1,8 @@
 module.exports = {
     theme: {
-        extend: {
-
-
+        fontFamily: {
+            'cursive': "Bebas Neue",
+            'sans-serif': 'Poppins'
         }
     }
 }

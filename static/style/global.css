@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@tailwind base; /* Preflight will be injected here */
+
+@tailwind components;
+
+@tailwind utilities;
+
+*{
+    font-family: 'Bebas Neue', cursive;
+}

@@ -4,5 +4,11 @@ export * from "twind";
 export const config: Configuration = {
   darkMode: "class",
   mode: "silent",
+  theme: {
+    fontFamily: {
+      sans: ["Helvetica", "sans-serif", "Bebas Neue"],
+      serif: ["Times", "serif"],
+    },
+  },
 };
 if (IS_BROWSER) setup(config);
