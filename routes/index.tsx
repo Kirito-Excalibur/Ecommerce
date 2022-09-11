@@ -310,7 +310,122 @@ export default function Home() {
         </span>
       </div>
       <div id="banner" class={tw` pt-36 mx-auto max-w-screen-lg border`}>
-        <img src="/images/banner.png" alt="" />
+        <img
+          src="/images/banner.png"
+          alt=""
+          class={tw`absolute mx-auto max-w-screen-lg`}
+        />
+        <img
+          src="/images/banner-bg.png"
+          alt=""
+          style={"margin:-70px 0 0 130px"}
+          class={tw`absolute `}
+        />
+        <div
+          id="banner-msg"
+          style={"margin:150px 0 0 500px"}
+          class={tw`absolute`}
+        >
+          <h1 style={"font-size:16px"}>Free Shipping On All Orders</h1>
+          <h1 style={" font-size:40px;font-weight:700"}>SPORT COLLECTION</h1>
+          <button
+            class={tw`p-1 pl-8 pr-8 mt-4 border rounded-3xl border-black hover:bg-black hover:text-white`}
+          >
+            WATCH
+          </button>
+        </div>
+      </div>
+      <div
+        id="omix"
+        style={"margin-top:700px"}
+        class={tw` mx-auto max-w-screen-lg border`}
+      >
+        <h1 class={tw`mt-10 ml-16`}>@Omix</h1>
+        <span class={tw`flex  mt-8 gap-5 justify-center`}>
+          <img
+            src="/images/omix-1.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer `}
+            alt=""
+          />
+          <img
+            src="/images/omix-2.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/omix-3.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/omix-4.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+        </span>
+        <span class={tw`flex  mt-8 gap-5 justify-center`}>
+          <img
+            src="/images/omix-5.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer `}
+            alt=""
+          />
+          <img
+            src="/images/omix-6.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/omix-7.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/omix-8.png"
+            style={"width:220px;height:220px"}
+            class={tw` rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+        </span>
+      </div>
+      <div id="footer" class={tw`mx-auto pt-36 max-w-screen-lg border`}>
+        <div class={tw`flex justify-between border border-red-500`} id="footer-1">
+          <div id="newsletter" class={tw`mt-10 ml-16`}>
+            <h1>Subscribe to Newsletter</h1>
+            <p>and get 10% off your first purchase!</p>
+          </div>
+          <form  action="">
+            <input class={tw`mt-10 mr-16 border p-1 rounded-3xl pl-4 pr-16`} type="text" name="" placeholder="Enter your Email" id="" />
+            <button class={tw`mt-10 mr-16 text-white bg-black border rounded-3xl p-2 pl-16 pr-16`}>Subscribe</button>
+          </form>
+        </div>
+
+        <div id="footer-2" style={"background:#212429"} class={tw`mt-16 pt-14 grid grid-cols-4 text-white`}>
+<div class={tw`flex border border-white flex-col items-center gap-10`} id="first"> 
+<span class={tw`flex items-center gap-2`}><img src="/images/delivery.svg" class={tw`w-14`} alt="" /> Delivery</span>
+<span class={tw`flex flex-col gap-3`}>
+<h1>Buyers</h1>
+<p>Payment</p>
+<p>Personal Data Policy</p>
+<p>Stock</p>
+<p>Gift Certificates</p>
+</span>
+ </div>
+<div class={tw`flex flex-col border border-white items-center gap-10`} id="second"><span class={tw`flex items-center gap-2`}>  <img src="/images/return.svg" class={tw`w-14`} alt="" /> Return</span>
+<span class={tw`flex flex-col gap-3`}>
+<p>Affiliate Programs</p>
+<p>Rules for using promotional codes</p>
+</span>
+</div>
+<div class={tw`flex flex-col border border-white items-center gap-10`} id="third"><span class={tw`flex items-center gap-2`}> <img src="/images/call.svg" class={tw`w-14`} alt="" /> Number</span> </div>
+<div class={tw`flex flex-col border border-white items-center gap-10`} id="forth"><span class={tw`flex items-center gap-2`}> <img src="/images/mail.svg" class={tw`w-14`} alt="" /> Mail</span> </div>
+        </div>
       </div>
     </div>
   );
