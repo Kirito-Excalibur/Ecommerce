@@ -39,8 +39,10 @@ export default function ImageSlider({ slides }) {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="travel"  />
+              <img src={slide.image} alt="travel" class={tw`w-36`} />
+              
             )}
+           
           </div>
         );
       })}

@@ -7,7 +7,14 @@
     "@twind": "./utils/twind.ts",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
+    "react": "https://esm.sh/preact@10.8.2/compat",
     "preact-heroicons": "https://esm.sh/v94/preact-heroicons@2.0.11-rc.4/X-ZS9wcmVhY3Q/es2022/preact-heroicons.js",
-    "preact-heroicons/": "https://esm.sh/v94/preact-heroicons@2.0.11-rc.4/X-ZS9wcmVhY3Q/es2022/preact-heroicons.js/"
+    "preact-heroicons/": "https://esm.sh/v94/preact-heroicons@2.0.11-rc.4/X-ZS9wcmVhY3Q/es2022/preact-heroicons.js/",
+    "react-elastic-carousel": "https://esm.sh/v94/react-elastic-carousel@0.11.5/es2022/react-elastic-carousel.js",
+    "react-elastic-carousel/": "https://esm.sh/v94/react-elastic-carousel@0.11.5/es2022/react-elastic-carousel.js/",
+    "styled-components": "https://esm.sh/v94/styled-components@5.3.5/es2022/styled-components.js",
+    "styled-components/": "https://esm.sh/v94/styled-components@5.3.5/es2022/styled-components.js/",
+    "react-slick": "https://esm.sh/v94/react-slick@0.29.0/es2022/react-slick.js",
+    "react-slick/": "https://esm.sh/v94/react-slick@0.29.0/es2022/react-slick.js/"
   }
 }

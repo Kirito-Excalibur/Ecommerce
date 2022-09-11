@@ -1,11 +1,17 @@
 /** @jsx h */
-import { h } from "preact";
+import {  h } from "preact";
 import { tw } from "twind";
 import ImageSlider from "../islands/ImageSlider.tsx";
+import Slider from "react-slick"
 import { SliderData } from "../components/SliderData.tsx";
-import { BestSellerData } from "../components/BestSellerData.tsx";
+
+
+
 
 export default function Home() {
+
+  
+
   return (
     <div>
       <div
@@ -203,8 +209,9 @@ export default function Home() {
       <div id="best-sellers" class={tw` mx-auto max-w-screen-lg border`}>
         <h1 class={tw`mt-10 ml-16`}>Best Sellers</h1>
         <span class={tw`flex justify-center`}>
-          {" "}
-          <ImageSlider slides={BestSellerData} />
+  <Slider>
+    
+  </Slider>
         </span>
       </div>
     </div>
