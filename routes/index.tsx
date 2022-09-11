@@ -1,17 +1,10 @@
 /** @jsx h */
-import {  h } from "preact";
+import { h } from "preact";
 import { tw } from "twind";
 import ImageSlider from "../islands/ImageSlider.tsx";
-import Slider from "react-slick"
 import { SliderData } from "../components/SliderData.tsx";
 
-
-
-
 export default function Home() {
-
-  
-
   return (
     <div>
       <div
@@ -208,11 +201,116 @@ export default function Home() {
       </div>
       <div id="best-sellers" class={tw` mx-auto max-w-screen-lg border`}>
         <h1 class={tw`mt-10 ml-16`}>Best Sellers</h1>
-        <span class={tw`flex justify-center`}>
-  <Slider>
-    
-  </Slider>
+        <span class={tw`flex  mt-8 gap-5 justify-center`}>
+          <img
+            src="/images/bs1.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer `}
+            alt=""
+          />
+          <img
+            src="/images/bs2.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/bs3.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/bs4.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
         </span>
+        <span class={tw`flex  mt-16   gap-5 justify-center`}>
+          <button
+            class={tw`p-1 pl-8 pr-8 border rounded-3xl border-black hover:bg-black hover:text-white`}
+          >
+            All Best Hits
+          </button>
+        </span>
+      </div>
+
+      <div id="new-colletions" class={tw` mx-auto max-w-screen-lg border`}>
+        <h1 class={tw`mt-10 ml-16`}>New Collections</h1>
+        <span class={tw`flex  mt-8 gap-5 justify-center`}>
+          <img
+            src="/images/nc-1.png"
+            style={"width:284px;height:284px"}
+            class={tw` rounded-3xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer `}
+            alt=""
+          />
+          <img
+            src="/images/nc-2.png"
+            style={"width:284px;height:284px"}
+            class={tw` rounded-3xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/nc-3.png"
+            style={"width:284px;height:284px"}
+            class={tw` rounded-3xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+        </span>
+      </div>
+      <div id="new" class={tw` mx-auto max-w-screen-lg border`}>
+        <h1 class={tw`mt-10 ml-16`}>New</h1>
+        <span class={tw`flex  mt-8 gap-5 justify-center`}>
+          <img
+            src="/images/new-1.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer `}
+            alt=""
+          />
+          <img
+            src="/images/new-2.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/new-3.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/new-4.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+        </span>
+        <span class={tw`flex  mt-8 gap-5 justify-center`}>
+          <img
+            src="/images/new-5.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer `}
+            alt=""
+          />
+          <img
+            src="/images/new-6.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/new-7.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+          <img
+            src="/images/new-8.png"
+            class={tw`w-56 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover: duration-100 hover: cursor-pointer`}
+            alt=""
+          />
+        </span>
+        <span class={tw`flex  mt-16   gap-5 justify-center`}>
+          <button
+            class={tw`p-1 pl-8 pr-8 border rounded-3xl border-black hover:bg-black hover:text-white`}
+          >
+            All New
+          </button>
+        </span>
+      </div>
+      <div id="banner" class={tw` pt-36 mx-auto max-w-screen-lg border`}>
+        <img src="/images/banner.png" alt="" />
       </div>
     </div>
   );

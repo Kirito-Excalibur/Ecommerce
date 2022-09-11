@@ -2,7 +2,7 @@
 import { useState } from "preact/hooks";
 import { h } from "preact";
 import { tw } from "twind";
-import { JSX } from "preact";
+
 export default function ImageSlider({ slides }) {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -22,7 +22,7 @@ export default function ImageSlider({ slides }) {
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class={tw`w-9 rounded-3xl top-1/2 right-3/4 hover: cursor-pointer hover:bg-gray-300`}
+        class={tw`w-9 rounded-3xl top-1/2 right-3/4  hover: cursor-pointer hover:bg-gray-300`}
         onClick={prevSlide}
       >
         <path
@@ -39,7 +39,7 @@ export default function ImageSlider({ slides }) {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="travel" class={tw`w-36`} />
+              <img src={slide.image} alt="travel" class={tw` `} />
               
             )}
            
