@@ -1,6 +1,5 @@
-/** @jsx h */
+
 import { useState } from "preact/hooks";
-import { h } from "preact";
 import { tw } from "twind";
 
 export default function ImageSlider({ slides }) {
@@ -15,14 +14,14 @@ export default function ImageSlider({ slides }) {
   };
 
   return (
-    <div class={tw`flex `}>
+    <div class="flex flex-row items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class={tw`w-9 rounded-3xl top-1/2 right-3/4  hover: cursor-pointer hover:bg-gray-300`}
+        class="w-9 h-9 rounded-3xl  hover:cursor-pointer hover:bg-gray-300"
         onClick={prevSlide}
       >
         <path
@@ -39,7 +38,7 @@ export default function ImageSlider({ slides }) {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="travel" class={tw` `} />
+              <img src={slide.image} alt="travel" class=" " />
               
             )}
            
@@ -50,9 +49,9 @@ export default function ImageSlider({ slides }) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="1.5"
+        stroke-width="1.5"  
         stroke="currentColor"
-        class={tw`w-9  rounded-3xl top-1/2 left-3/4 hover: cursor-pointer hover:bg-gray-300`}
+        class="w-9 h-9   hover:cursor-pointer hover:bg-gray-300"
         onClick={nextSlide}
       >
         <path
