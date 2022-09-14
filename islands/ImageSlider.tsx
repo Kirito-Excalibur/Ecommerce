@@ -3,7 +3,7 @@ import { useState } from "preact/hooks";
 import { tw } from "twind";
 
 export default function ImageSlider({ slides }) {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(4);
   const length = slides.length;
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -14,14 +14,14 @@ export default function ImageSlider({ slides }) {
   };
 
   return (
-    <div class="flex flex-row items-center">
+    <div class="flex flex-row mt-10 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-9 h-9 rounded-3xl  hover:cursor-pointer hover:bg-gray-300"
+        class="w-20  rounded-3xl  hover:cursor-pointer hover:bg-gray-300"
         onClick={prevSlide}
       >
         <path
@@ -38,7 +38,7 @@ export default function ImageSlider({ slides }) {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="travel" class=" " />
+              <img src={slide.image} alt="travel" class="rounded-lg " />
               
             )}
            
@@ -51,7 +51,7 @@ export default function ImageSlider({ slides }) {
         viewBox="0 0 24 24"
         stroke-width="1.5"  
         stroke="currentColor"
-        class="w-9 h-9   hover:cursor-pointer hover:bg-gray-300"
+        class="w-20 rounded-3xl   hover:cursor-pointer hover:bg-gray-300"
         onClick={nextSlide}
       >
         <path
