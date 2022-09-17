@@ -1,4 +1,3 @@
-
 import { useState } from "preact/hooks";
 import { tw } from "twind";
 
@@ -38,10 +37,13 @@ export default function ImageSlider({ slides }) {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="travel" class="rounded-lg " />
-              
+              <img
+                src={slide.image}
+                alt="travel"
+                class="rounded-lg "
+                style={"width:600px;height:300px"}
+              />
             )}
-           
           </div>
         );
       })}
@@ -49,7 +51,7 @@ export default function ImageSlider({ slides }) {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        stroke-width="1.5"  
+        stroke-width="1.5"
         stroke="currentColor"
         class="w-20 rounded-3xl   hover:cursor-pointer hover:bg-gray-300"
         onClick={nextSlide}

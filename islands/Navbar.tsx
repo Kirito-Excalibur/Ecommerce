@@ -1,8 +1,14 @@
-import React from "react";
-
+import { useState } from "preact/hooks";
+import { SidebarData } from "../components/Sidebar.tsx";
 function Navbar() {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => {
+    setSidebar(!sidebar);
+  };
+
   return (
-    <div>
+    <div style={""}>
       <div
         class="flex justify-between  mx-auto"
         style={"height:86px;width:360px"}
@@ -14,7 +20,8 @@ function Navbar() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-10 h-10"
+            class="w-10 h-10 hover:cursor-pointer"
+            onClick={showSidebar}
           >
             <path
               stroke-linecap="round"
@@ -23,6 +30,41 @@ function Navbar() {
             />
           </svg>
         </span>
+
+        <ul
+          class={sidebar? "fixed flex flex-col left-0 bg-pink-500 pt-10 transition-all ease-in rounded-tr-lg h-full": " fixed flex flex-col  -left-36 bg-pink-500 pt-10 transition-all ease-in rounded-tr-lg h-full"}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="inline-block  w-10 h-10 hover:cursor-pointer"
+            onClick={showSidebar}
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+
+          <li class="text-2xl mt-10  gap-5">
+            {SidebarData.map((item, index) => {
+              return (
+                <a href="">
+                   <li key={index} class={item.cname}>
+                  <span class="  text-center p-4  w-full block transition ease-in-out  hover:bg-gray-500 hover:duration-500">
+                    {item.title}
+                  </span>
+                </li>
+                </a>
+               
+              );
+            })}
+          </li>
+        </ul>
 
         <span class="flex gap-3 mt-6">
           <svg
