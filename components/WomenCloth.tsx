@@ -1,15 +1,15 @@
 import React from 'react'
 import { tropical_data } from './tropical_data.tsx'
 
-function Tropical() {
+function WomenCloth() {
   return (
-    <div>
-        <div id="tropical" style={"width: 360px"} class=" mx-auto  ">
-        <h1 class="mt-24  ml-16">Tropical</h1>
-        <div class="mt-7 flex flex-wrap justify-center gap-4">
+    <div class='mx-auto' style={"width:360px"}>
+      
+    <h1 class=" mt-8 ">Womens's Clothing</h1>
+    <div style={"width:360px"} class="mt-7 flex overflow-hidden  gap-4">
       {tropical_data.map((items,index)=>{
         return (
-          <span class="flex flex-col items-center gap-y-4">
+          <span class="flex flex-col  items-center gap-y-4">
             <img
               src={items.image}
               alt=""
@@ -22,9 +22,8 @@ function Tropical() {
           
          
         </div>
-      </div>
     </div>
   )
 }
 
-export default Tropical
+export default WomenCloth

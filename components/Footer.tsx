@@ -4,6 +4,7 @@ function Footer() {
   return (
     <div>
       <div id="footer" style={"width:360px"} class="mx-auto pt-36  ">
+        <hr />
         <div class="flex flex-wrap " id="footer-1">
           <div id="newsletter" class="mt-10 ml-4">
             <h1>Subscribe to Newsletter</h1>

@@ -25,6 +25,7 @@ export default function Home() {
       <New />
       <Banner />
       <Omix />
+      <hr />
       <Footer />
     </body>
   );

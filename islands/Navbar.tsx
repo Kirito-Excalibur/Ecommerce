@@ -53,7 +53,7 @@ function Navbar() {
           <li class="text-2xl mt-10  gap-5">
             {SidebarData.map((item, index) => {
               return (
-                <a href="">
+                <a href={item.path}>
                    <li key={index} class={item.cname}>
                   <span class="  text-center p-4  w-full block transition ease-in-out  hover:bg-gray-500 hover:duration-500">
                     {item.title}
