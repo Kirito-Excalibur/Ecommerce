@@ -77,7 +77,7 @@ function shipping() {
       <div
        style={"height:48px"}
        class="border w-full mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex ">
-        <a href="">   Go To Payment</a>
+        <a href="/payment">   Go To Payment</a>
     
       </div>
 
