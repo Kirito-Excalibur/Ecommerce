@@ -16,12 +16,14 @@ function payment() {
           All transactions are secure and <br /> ecrypted
         </p>
       </span>
-      <img src="/images/card-front.svg"
+      <img
+        src="/images/card-front.svg"
         class="-translate-x-6 z-10"
         style={"width:266px"}
         alt=""
       />
-      <img src="/images/card-back.svg"
+      <img
+        src="/images/card-back.svg"
         class=" translate-x-6 z-0"
         style={"width:266px;margin-top:-151px"}
         alt=""
@@ -40,41 +42,36 @@ function payment() {
         />
 
         <span class="flex gap-3">
-      
-            <input
-          placeholder="12 "
-          style={"height:48px"}
-          class="border w-3/12  mt-3  flex-row pl-4 pr-2  items-center rounded-3xl flex"
-        />
+          <input
+            placeholder="12 "
+            style={"height:48px"}
+            class="border w-3/12  mt-3  flex-row pl-4 pr-2  items-center rounded-3xl flex"
+          />
 
-
-        
-      
-        <input
-          placeholder="24"
-          style={"height:48px"}
-          class="border w-3/12  mt-3  flex-row pl-4 pr-2  items-center rounded-3xl flex"
-        />
-        <input
-          placeholder="CVV"
-          style={"height:48px"}
-          class="border w-8/12 mt-3  flex-row pl-4 pr-2  items-center rounded-3xl flex"
-        />
-
+          <input
+            placeholder="24"
+            style={"height:48px"}
+            class="border w-3/12  mt-3  flex-row pl-4 pr-2  items-center rounded-3xl flex"
+          />
+          <input
+            placeholder="CVV"
+            style={"height:48px"}
+            class="border w-8/12 mt-3  flex-row pl-4 pr-2  items-center rounded-3xl flex"
+          />
         </span>
 
         <span class="flex justify-between font-bold mt-6">
-<h1> Amount Payable:</h1>
-<h1>169.98 BYN</h1>
+          <h1> Amount Payable:</h1>
+          <h1>169.98 BYN</h1>
         </span>
         <div
-       style={"height:48px"}
-       class="border w-full mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex ">
-        <a href="">Pay</a>
-    
-      </div>
+          style={"height:48px"}
+          class="border w-full mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex "
+        >
+          <a href="">Pay</a>
+        </div>
 
-     <Footer/>
+        <Footer />
       </div>
     </div>
   );
