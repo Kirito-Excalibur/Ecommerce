@@ -4,7 +4,7 @@ function Bestseller() {
   return (
     <div>
       <div id="best-sellers" class=" mx-auto  " style={"width:360px"}>
-        <h1 class="mt-24 ml-16">Best Sellers</h1>
+        <h1 class="mt-24 text-2xl font-bold ml-10">Best Sellers</h1>
         <span class="flex flex-wrap  mt-8 gap-5 justify-center">
           {BestSellerData.map((item, index) => {
             return (

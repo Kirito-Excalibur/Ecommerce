@@ -5,7 +5,7 @@ function Tropical() {
   return (
     <div>
         <div id="tropical" style={"width: 360px"} class=" mx-auto  ">
-        <h1 class="mt-24  ml-16">Tropical</h1>
+        <h1 class="mt-24 font-bold text-2xl ml-10">Tropical</h1>
         <div class="mt-7 flex flex-wrap justify-center gap-4">
       {tropical_data.map((items,index)=>{
         return (

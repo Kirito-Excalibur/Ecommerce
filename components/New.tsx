@@ -4,7 +4,7 @@ function New() {
   return (
     <div>
       <div id="new" style={"width:360px"} class=" mx-auto  ">
-        <h1 class="mt-24 ml-16">New</h1>
+        <h1 class="mt-24 ml-10 text-2xl font-bold">New</h1>
         <span class="flex flex-wrap mt-8 gap-5 justify-center">
           <img
             src="/images/new-1.png"

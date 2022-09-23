@@ -5,7 +5,7 @@ function WomenCloth() {
   return (
     <div class='mx-auto' style={"width:360px"}>
       
-    <h1 class=" mt-8 ">Womens's Clothing</h1>
+    <h1 class=" mt-8 text-2xl font-extrabold">Womens's Clothing</h1>
     <div style={"width:360px"} class="mt-7 flex overflow-hidden  gap-4">
       {tropical_data.map((items,index)=>{
         return (

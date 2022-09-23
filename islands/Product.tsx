@@ -1,9 +1,9 @@
 import { useState } from "preact/hooks";
-import React from "react";
 import All_items from "../components/All_items.tsx";
 import { All_items_data } from "../components/All_items_data.tsx";
+import ReviewBox from "../components/ReviewBox.tsx";
 import Navbar from "../islands/Navbar.tsx";
-
+import Footer from "../components/Footer.tsx"
 function Product({ data }) {
   const [counter, setCounter] = useState(1);
 
@@ -24,7 +24,7 @@ function Product({ data }) {
       <Navbar />
       <span class="w-full">
         <p class="text-sm  text-gray-500">Home/Women/{data.name}</p>
-        <h1 class="font-bold text-2xl">Straight Fit Jeans In White</h1>
+        <h1 class="font-bold text-2xl ">Straight Fit Jeans In White</h1>
       </span>
 
       <span class="w-full mt-8 flex justify-between">
@@ -327,10 +327,14 @@ function Product({ data }) {
         >
           Leave Feedback
         </button>
-
+<ReviewBox name={"Ludmila"} color={"White Color"} size={"M"} describe={"Nice fabric, great fit. At the waist. Intense black color. Fits size M perfectly"}/>
+<ReviewBox name={"Elena"} color={"White Color"} size={"M"} describe={"Good jeans, the quality is generally satisfied, the only negative is a little small."}/>
+              
+        
+</span>
         <All_items itemdata={All_items_data.slice(0,4)} title={"Similar Products"} />
-
-      </span>
+        <All_items itemdata={All_items_data.slice(4,8)} title={"Buy With This Product"} />
+    <Footer/>
     </div>
   );
 }

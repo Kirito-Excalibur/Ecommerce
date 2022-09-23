@@ -1,4 +1,3 @@
-import { tw } from "twind";
 import ImageSlider from "../islands/ImageSlider.tsx";
 import { SliderData } from "../components/SliderData.tsx";
 import Navbar from "../islands/Navbar.tsx";
@@ -9,10 +8,12 @@ import New from "../components/New.tsx";
 import Banner from "../components/Banner.tsx";
 import Omix from "../components/omix.tsx";
 import Footer from "../components/Footer.tsx";
-import sidebar from "../islands/Navbar.tsx"
+
+
 
 export default function Home() {
   return (
+    
     <body
       class="flex relative  mx-auto flex-col items-center"
       style="width:360px"
@@ -26,6 +27,7 @@ export default function Home() {
       <Banner />
       <Omix />
       <hr />
+    
       <Footer />
     </body>
   );

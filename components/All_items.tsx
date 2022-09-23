@@ -31,6 +31,7 @@ function All_items({itemdata, title} ) {
           Next 12 Items
         </button>
       </span>
+      
     </div>
   );
 }

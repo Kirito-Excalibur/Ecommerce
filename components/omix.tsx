@@ -4,7 +4,7 @@ function Omix() {
   return (
     <div>
       <div id="omix" style={" width:360px"} class=" mx-auto  ">
-        <h1 class="mt-24 ml-16">@Omix</h1>
+        <h1 class="mt-24 ml-10 text-2xl font-bold">@Omix</h1>
         <span class="flex flex-wrap mt-8 gap-5 justify-center">
           <img
             src="/images/omix-1.png"
