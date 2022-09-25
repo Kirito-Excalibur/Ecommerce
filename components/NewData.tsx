@@ -1,0 +1,26 @@
+export const NewData=[
+    {
+        image:"/images/new-1.png"
+    },
+    {
+        image:"/images/new-2.png"
+    },
+    {
+        image:"/images/new-3.png"
+    },
+    {
+        image:"/images/new-4.png"
+    },
+    {
+        image:"/images/new-5.png"
+    },
+    {
+        image:"/images/new-6.png"
+    },
+    {
+        image:"/images/new-7.png"
+    },
+    {
+        image:"/images/new-8.png"
+    }
+]

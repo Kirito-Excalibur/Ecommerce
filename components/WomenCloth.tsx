@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { tropical_data } from './tropical_data.tsx'
 
 function WomenCloth() {

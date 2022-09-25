@@ -1,4 +1,4 @@
-import React from "react";
+
 import Footer from "../components/Footer.tsx";
 import Navbar from "../islands/Navbar.tsx";
 

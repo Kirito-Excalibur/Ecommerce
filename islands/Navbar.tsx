@@ -10,8 +10,8 @@ function Navbar() {
   return (
     <div style={""}>
       <div
-        class="flex justify-between  mx-auto"
-        style={"height:86px;width:360px"}
+        class="flex justify-between h-[86px] w-[360px]   mx-auto sm:w-[1770px]"
+      
       >
         <span class=" mt-6 ">
           <svg
@@ -66,7 +66,17 @@ function Navbar() {
           </li>
         </ul>
 
+
+
+<ul class="flex gap-60  items-center ">
+  <li class="hidden hover:border-b-4 hover:border-black sm:block"> <a href=""> Women</a></li>
+  <li class="hidden hover:border-b-4 hover:border-black sm:block"> <a href="">Men</a> </li>
+  <li class="hidden hover:border-b-4 hover:border-black sm:block"> <a href="">New</a> </li>
+  <li class="hidden hover:border-b-4 hover:border-black sm:block"> <a href=""> Special Collections</a></li>
+</ul>
+
         <span class="flex gap-3 mt-6">
+          
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

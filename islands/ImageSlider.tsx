@@ -40,8 +40,8 @@ export default function ImageSlider({ slides }) {
               <img
                 src={slide.image}
                 alt="travel"
-                class="rounded-lg "
-                style={"width:600px;height:300px"}
+                class="rounded-lg w-[600px] h-[300px] sm:h-[600px] "
+                
               />
             )}
           </div>

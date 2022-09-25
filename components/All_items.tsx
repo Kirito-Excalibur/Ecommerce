@@ -1,4 +1,4 @@
-import React from "react";
+
 import { All_items_data } from "./All_items_data.tsx";
 
 function All_items({itemdata, title} ) {

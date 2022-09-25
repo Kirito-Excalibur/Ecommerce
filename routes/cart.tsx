@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../islands/Navbar.tsx";
 import { All_items_data } from "../components/All_items_data.tsx";
 import Counter from "../islands/Counter.tsx";

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Product from '../../islands/Product.tsx'
 import { All_items_data } from '../../components/All_items_data.tsx'
 function Al_1() {

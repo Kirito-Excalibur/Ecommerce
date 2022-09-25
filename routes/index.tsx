@@ -9,17 +9,50 @@ import Banner from "../components/Banner.tsx";
 import Omix from "../components/omix.tsx";
 import Footer from "../components/Footer.tsx";
 
-
-
 export default function Home() {
+  const A = "THERE ARE CLOTHES FOR EVERYONE";
+  const B = "THERE WILL BE CLOTHER FOR EVERYONE";
   return (
-    
-    <body
-      class="flex relative  mx-auto flex-col items-center"
-      style="width:360px"
-    >
+    <body class="flex relative w-[360px] select-none mx-auto flex-col items-center justify-center sm:w-[1770px]">
       <Navbar />
-      <ImageSlider slides={SliderData} />
+      <div class="sm:flex sm:gap-20">
+        <span>
+          <img
+            src="/images/Index_scrn.png"
+            alt=""
+            class="w-[360px] rounded-3xl sm:h-[809px] sm:w-[597px] sm:rounded-none sm:rounded-tr-[250px]"
+          />
+        </span>
+        <span>
+          <h1 class="text-[32px] sm:hidden">THERE ARE CLOTHES FOR EVERYONE</h1>
+          <h1 class="text-[32px] hidden sm:block sm:font-bold sm:text-[100px]">
+            THERE WILL BE <br /> CLOTHES <br /> FOR EVERYONE
+          </h1>
+          <h1 class=""></h1>
+          <p class="mt-5 sm:text-[24px] sm:text-center">Pay for only what suits you</p>
+          <span class="flex justify-center gap-6 sm:gap-36">
+            <a href=""   style={"height:48px"}
+              class="border w-1/2 mt-7 bg-[#F6B750] pl-4 pr-2 justify-center items-center rounded-3xl flex sm:w-1/4">
+            <span
+            
+            >
+              
+              For Men
+            </span>
+            </a>
+          
+          <a href=""  style={"height:48px"}
+              class="border w-1/2 mt-7 bg-[#F6B750]  pl-4 pr-2 justify-center items-center rounded-3xl flex sm:w-1/4">
+          <span
+             
+            >
+              For Women
+            </span>
+          </a>
+         
+          </span>
+        </span>
+      </div>
       <Tropical />
       <Bestseller />
       <NewCollections />
@@ -27,7 +60,7 @@ export default function Home() {
       <Banner />
       <Omix />
       <hr />
-    
+
       <Footer />
     </body>
   );
