@@ -11,9 +11,9 @@ import Footer from "../components/Footer.tsx";
 
 export default function Home() {
   const A = "THERE ARE CLOTHES FOR EVERYONE";
-  const B = "THERE WILL BE CLOTHER FOR EVERYONE";
+  const B = "THERE WILL BE CLOTHES FOR EVERYONE";
   return (
-    <body class="flex relative w-[360px] select-none mx-auto flex-col items-center justify-center sm:w-[1770px]">
+    <body class="flex mx-auto w-[360px] select-none  flex-col items-center justify-center sm:w-[1770px]">
       <Navbar />
       <div class="sm:flex sm:gap-20">
         <span>
@@ -32,7 +32,7 @@ export default function Home() {
           <p class="mt-5 sm:text-[24px] sm:text-center">Pay for only what suits you</p>
           <span class="flex justify-center gap-6 sm:gap-36">
             <a href=""   style={"height:48px"}
-              class="border w-1/2 mt-7 bg-[#F6B750] pl-4 pr-2 justify-center items-center rounded-3xl flex sm:w-1/4">
+              class="border w-1/2 mt-7 bg-[#F6B750]   justify-center items-center rounded-3xl flex sm:w-1/4">
             <span
             
             >
@@ -42,7 +42,7 @@ export default function Home() {
             </a>
           
           <a href=""  style={"height:48px"}
-              class="border w-1/2 mt-7 bg-[#F6B750]  pl-4 pr-2 justify-center items-center rounded-3xl flex sm:w-1/4">
+              class="border w-1/2 mt-7 bg-[#F6B750]    justify-center items-center rounded-3xl flex sm:w-1/4">
           <span
              
             >

@@ -3,8 +3,8 @@ import { All_items_data } from "./All_items_data.tsx";
 
 function All_items({itemdata, title} ) {
   return (
-    <div id="best-sellers" class=" mx-auto  " style={"width:360px"}>
-      <h1 class=" mt-8 text-3xl font-bold">{title}</h1>
+    <div id="best-sellers" class="  w-[360px]  sm:w-[961px] " >
+      <h1 class=" mt-8 text-3xl font-bold sm:hidden">{title}</h1>
       <hr />
 
       <span class="flex flex-wrap  mt-8 gap-10 justify-center">
@@ -14,7 +14,7 @@ function All_items({itemdata, title} ) {
               <a href={item.address}>
                 <img
                   src={item.image}
-                  class="w-36 rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110  hover:duration-100 hover:cursor-pointer "
+                  class="sm:w-[280px] w-36 sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110  hover:duration-100 hover:cursor-pointer "
                   alt=""
                 />
               </a>
