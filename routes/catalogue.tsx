@@ -12,7 +12,7 @@ function catalogue() {
         <p class="text-sm  text-gray-500">Home/Women</p>
       </span>
 
-      <span class="flex">
+      <span class="flex gap-20">
         <span>
           <Section_bar />
         </span>

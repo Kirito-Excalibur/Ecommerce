@@ -2,8 +2,8 @@
 function ReviewBox({name,color,size,describe}) {
   return (
     <div
-      style={" width:360px"}
-      class="mt-12 mx-auto p-2 bg-gray-100 rounded-lg flex flex-col gap-4 "
+    
+      class="mt-12 w-[360px] sm:w-[488px] p-2 bg-gray-100 rounded-lg flex flex-col gap-4 "
     >
       <span class="flex justify-between">
         <span class="flex flex-col">
