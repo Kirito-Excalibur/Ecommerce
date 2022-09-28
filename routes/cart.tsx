@@ -6,18 +6,21 @@ import Footer from "../components/Footer.tsx";
 function cart() {
   return (
     <div
-      class="flex relative mx-auto flex-col  items-center"
-      style="width:360px"
+      class="flex relative mx-auto flex-col w-[360px] sm:w-[1770px]  items-center sm:items-start"
+    
     >
       <Navbar />
-      <span class=" w-full">
+      <span class=" w-full ">
         <p class="text-sm  text-gray-500">Home/Cart</p>
         <h1 class="text-3xl font-bold">Cart</h1>
-        <p>You have 2 items in your cart</p>
+        <p class="sm:hidden">You have 2 items in your cart</p>
       </span>
-
-      <div class="flex flex-col mt-8 ">
-        <hr />
+      
+      
+      <span class="sm:flex  sm:w-full sm:justify-end">
+      <span class="sm:w-full">
+      <div class="flex flex-col sm:flex-row sm:justify-between mt-8 sm:w-[800px]">
+        <hr class="sm:hidden" />
         <span class="flex pt-4 gap-3 ">
           <img
             style={"width:104px;height:135px"}
@@ -26,9 +29,9 @@ function cart() {
           />
           <span>
             <h1 class="font-extrabold">Straight fit jeans in white</h1>
-            <h1>
-              {" "}
-              <span class="font-bold">Color:</span> White
+            <h1 class="sm:mt-5">
+          
+              <span class="font-bold ">Color:</span> White
             </h1>
             <h1>
               {" "}
@@ -53,15 +56,15 @@ function cart() {
           </svg>
         </span>
 
-        <span class="flex justify-between mt-3 align-middle items-center">
+        <span class="flex sm:flex-col-reverse justify-between mt-3 align-middle items-center">
           <span>
             <Counter />
           </span>
           <span class="font-bold text-xl">79.99 USD</span>
         </span>
       </div>
-      <div class="flex flex-col mt-8 ">
-        <hr />
+      <div class="flex flex-col sm:flex-row sm:justify-between mt-8 sm:w-[800px]">
+        <hr class="sm:hidden " />
         <span class="flex pt-4 gap-3 ">
           <img
             style={"width:104px;height:135px"}
@@ -70,7 +73,7 @@ function cart() {
           />
           <span>
             <h1 class="font-extrabold">Straight fit jeans in white</h1>
-            <h1>
+            <h1 class="sm:mt-5">
               {" "}
               <span class="font-bold">Color:</span> Flowers
             </h1>
@@ -97,18 +100,65 @@ function cart() {
           </svg>
         </span>
 
-        <span class="flex justify-between mt-3 align-middle items-center">
+        <span class="flex sm:flex-col-reverse justify-between mt-3 align-middle items-center">
           <span>
             <Counter />
           </span>
           <span class="font-bold text-xl">79.99 USD</span>
         </span>
       </div>
+      </span>
+      <span class="hidden sm:w-[384px] sm:p-4 sm:flex sm:flex-col bg-gray-100 ">
+<h1 class="text-3xl font-bold">Promo Code</h1>
+<input
+            placeholder="Enter Promo Code"
+            style={"height:48px"}
+            class="border w-[336px] mt-7  flex-row pl-4 pr-2  items-center rounded-3xl flex"
+          />
+<h1 class="ml-4 mt-3 text-2xl font-bold">Order Of Price</h1>
+<div class="grid grid-cols-2 hidden sm:grid bg-gray-100 p-4 mt-2">
+        <div class=" flex flex-col">
+          
+          <p>Cost of the goods:</p>
+          <p>Delivery:</p>
+          <p>Discount Amount:</p>
+        </div>
 
-      <div class="w-full mt-20">
+        <div class=" flex flex-col items-end justify-end">
+        
+          <p>159,98 BYN</p>
+          <p>10 BYN</p>
+          <p>0</p>
+        </div>
+
+      
+
+      </div>
+
+<hr />
+<span class="flex ml-4 justify-between ">
+<p class="font-bold"> The Total Amount <br /> Of The Order:</p>
+<p class="  sm:font-bold">169.99 BYN</p>
+</span>
+
+<a href="/shipping">
+<div
+       style={"height:48px"}
+       class="border w-full hidden sm:flex mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex ">
+        Go To Checkout
+    
+      </div>
+      </a>
+      </span>
+      </span>
+     
+
+
+
+      <div class="w-full sm:w-[800px] mt-20">
         <h1 class="text-3xl font-bold">Delivery</h1>
 
-        <span class="flex justify-between mt-8">
+        <span class="flex sm:justify-start sm:gap-4 justify-between mt-8">
           <span
             style={"width:152px;height:48px"}
             class="border border-black flex-row pl-2 pr-2 justify-center items-center rounded-3xl flex"
@@ -189,8 +239,10 @@ function cart() {
           />
         </span>
       </div>
-      <div class="grid grid-cols-2 bg-gray-100 p-4 mt-8">
-        <div style={"width:290px"} class=" ">
+    
+     
+      <div class="grid grid-cols-2  sm:hidden bg-gray-100 p-4 mt-8">
+        <div class=" ">
           <p class="font-bold"> The Total Amount Of The Order:</p>
           <p>Cost of the goods:</p>
           <p>Delivery:</p>
@@ -199,6 +251,7 @@ function cart() {
 
         <div class=" flex flex-col items-end justify-end">
           <p>169.99 BYN</p>
+          <p>159,98 BYN</p>
           <p>10 BYN</p>
           <p>0</p>
         </div>
@@ -206,13 +259,14 @@ function cart() {
       
 
       </div>
+      <a href="/shipping">
       <div
        style={"height:48px"}
-       class="border w-full mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex ">
-        <a href="/shipping">   Go To Checkout</a>
+       class="border w-[200px] sm:hidden mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex ">
+         Go To Checkout
     
       </div>
-
+      </a>
       <Footer/>
     </div>
   );
