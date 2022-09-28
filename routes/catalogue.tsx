@@ -8,7 +8,7 @@ function catalogue() {
   return (
     <body class="flex relative mx-auto flex-col items-center w-[360px] sm:w-[1770px] ">
       <Navbar />
-      <span class="w-full mx-auto sm:ml-[37rem] sm:w-[961px] ">
+      <span class="w-full mx-auto sm:ml-[40rem] sm:w-[961px] ">
         <p class="text-sm  text-gray-500">Home/Women</p>
       </span>
 
