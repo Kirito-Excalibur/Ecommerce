@@ -13,7 +13,7 @@ function catalogue() {
       </span>
 
       <span class="flex gap-20">
-        <span>
+        <span class="hidden sm:block">
           <Section_bar />
         </span>
         <span>

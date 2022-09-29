@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <div style={""}>
-      <div class="flex justify-between h-[86px] w-[360px]   mx-auto sm:w-[1770px]">
+      <div class="flex justify-between h-[86px] w-[360px]  mx-auto sm:w-[1770px]">
         <span class=" mt-6 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
