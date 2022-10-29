@@ -10,8 +10,11 @@ import * as $3 from "./routes/cart.tsx";
 import * as $4 from "./routes/catalogue.tsx";
 import * as $5 from "./routes/index.tsx";
 import * as $6 from "./routes/payment.tsx";
-import * as $7 from "./routes/products/Al_1.tsx";
-import * as $8 from "./routes/shipping.tsx";
+import * as $7 from "./routes/products/bestsellers/[Al_3].tsx";
+import * as $8 from "./routes/products/catalogue/[Al_1].tsx";
+import * as $9 from "./routes/products/new/[Al_4].tsx";
+import * as $10 from "./routes/products/womencloth/[Al_2].tsx";
+import * as $11 from "./routes/shipping.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/ImageSlider.tsx";
 import * as $$2 from "./islands/Navbar.tsx";
@@ -27,8 +30,11 @@ const manifest = {
     "./routes/catalogue.tsx": $4,
     "./routes/index.tsx": $5,
     "./routes/payment.tsx": $6,
-    "./routes/products/Al_1.tsx": $7,
-    "./routes/shipping.tsx": $8,
+    "./routes/products/bestsellers/[Al_3].tsx": $7,
+    "./routes/products/catalogue/[Al_1].tsx": $8,
+    "./routes/products/new/[Al_4].tsx": $9,
+    "./routes/products/womencloth/[Al_2].tsx": $10,
+    "./routes/shipping.tsx": $11,
   },
   islands: {
     "./islands/Counter.tsx": $$0,

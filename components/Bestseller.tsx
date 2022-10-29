@@ -8,11 +8,16 @@ function Bestseller() {
         <span class="flex flex-wrap  mt-8 gap-5 justify-center">
           {BestSellerData.map((item, index) => {
             return (
+              
+              <a href={item.address}>
+              
               <img
                 src={item.image}
                 class="w-36 rounded-xl transition ease-in-out sm:w-[280px] sm:h-[400px]  hover:-translate-y-1 hover:scale-110  hover:duration-100 hover:cursor-pointer "
                 alt=""
               />
+</a>
+
             );
           })}
         </span>

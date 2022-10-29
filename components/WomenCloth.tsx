@@ -8,6 +8,7 @@ function WomenCloth() {
         {tropical_data.map((items, index) => {
           return (
             <span class="flex flex-col  items-center gap-y-4">
+              <a href={items.address}></a>
               <img
                 src={items.image}
                 alt=""
@@ -22,11 +23,14 @@ function WomenCloth() {
         {tropical_data.slice(0, 4).map((items, index) => {
           return (
             <span class="flex flex-col  items-center gap-y-4">
+              <a href={items.address}>
               <img
                 src={items.image}
                 alt=""
                 class="rounded-full w-[176px] max-w-lg"
               />
+              </a>
+             
               {items.name}
             </span>
           );

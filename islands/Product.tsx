@@ -23,7 +23,7 @@ function Product({ data }) {
       <div class="flex mx-auto justify-center flex-col items-center sm:hidden">
         <span class="w-full">
           <p class="text-sm  text-gray-500">Home/Women/{data.name}</p>
-          <h1 class="font-bold text-2xl ">Straight Fit Jeans In White</h1>
+          <h1 class="font-bold text-2xl ">{data.name}</h1>
         </span>
 
         <span class="w-full mt-8 flex justify-between">
@@ -437,7 +437,7 @@ function Product({ data }) {
               </span>
 
               <span class="flex mt-2 justify-between">
-                <h1 class="font-bold text-2xl ">Straight Fit Jeans In White</h1>
+                <h1 class="font-bold text-2xl ">{data.name}</h1>
                 <span class="flex sm:gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -10,11 +10,14 @@ function Tropical() {
           {tropical_data.map((items, index) => {
             return (
               <span class="flex flex-col items-center gap-y-4">
+                <a href={items.address}>
                 <img
                   src={items.image}
                   alt=""
                   class="rounded-full w-36 max-w-lg"
                 />
+                </a>
+             
                 {items.name}
               </span>
             );

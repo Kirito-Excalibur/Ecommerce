@@ -1,4 +1,4 @@
-
+import { NewData } from "./NewData.tsx";
 function New() {
   return (
     <div>
@@ -6,48 +6,33 @@ function New() {
         <h1 class="mt-24 ml-10 text-2xl font-bold sm:ml-[27rem]">New</h1>
         <span class="flex flex-wrap mt-8 gap-5 justify-center">
           <span class="flex flex-wrap justify-center gap-4">
-            <img
-              src="/images/new-1.png"
-              class="w-36  sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer "
-              alt=""
-            />
-            <img
-              src="/images/new-2.png"
-              class="w-36 sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer"
-              alt=""
-            />
-            <img
-              src="/images/new-3.png"
-              class="w-36 sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer"
-              alt=""
-            />
-            <img
-              src="/images/new-4.png"
-              class="w-36 sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer"
-              alt=""
-            />
+            {NewData.slice(0,4).map((item) => {
+              return (
+                <a href={item.address}>
+                  {" "}
+                  <img
+                    class="w-36  sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer "
+                    src={item.image}
+                    alt=""
+                  />{" "}
+                </a>
+              );
+            })}
           </span>
+
           <span class="hidden gap-4 sm:flex">
-            <img
-              src="/images/new-5.png"
-              class="sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer"
-              alt=""
-            />
-            <img
-              src="/images/new-6.png"
-              class="sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer"
-              alt=""
-            />
-            <img
-              src="/images/new-7.png"
-              class="sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer"
-              alt=""
-            />
-            <img
-              src="/images/new-8.png"
-              class="sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer"
-              alt=""
-            />
+          {NewData.slice(4,8).map((item) => {
+              return (
+                <a href={item.address}>
+                  {" "}
+                  <img
+                    class="w-36  sm:w-[280px] sm:h-[400px] rounded-xl transition ease-in-out   hover:-translate-y-1 hover:scale-110 hover:duration-100 hover:cursor-pointer "
+                    src={item.image}
+                    alt=""
+                  />{" "}
+                </a>
+              );
+            })}
           </span>
         </span>
 
