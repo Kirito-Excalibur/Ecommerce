@@ -1,160 +1,66 @@
-
 import Navbar from "../islands/Navbar.tsx";
 import { All_items_data } from "../components/All_items_data.tsx";
 import Counter from "../islands/Counter.tsx";
 import Footer from "../components/Footer.tsx";
+import CartContent from "../islands/CartContent.tsx";
+
 function cart() {
   return (
-    <div
-      class="flex relative mx-auto flex-col w-[360px] sm:w-[1770px]  items-center sm:items-start"
-    
-    >
-      <Navbar />
+    <div class="flex relative mx-auto flex-col w-[360px] sm:w-[1770px]  items-center sm:items-start">
+      <Navbar />=
       <span class=" w-full ">
         <p class="text-sm  text-gray-500">Home/Cart</p>
         <h1 class="text-3xl font-bold">Cart</h1>
         <p class="sm:hidden">You have 2 items in your cart</p>
       </span>
-      
-      
       <span class="sm:flex  sm:w-full sm:justify-end">
-      <span class="sm:w-full">
-      <div class="flex flex-col sm:flex-row sm:justify-between mt-8 sm:w-[800px]">
-        <hr class="sm:hidden" />
-        <span class="flex pt-4 gap-3 ">
-          <img
-            style={"width:104px;height:135px"}
-            src={All_items_data[0].image}
-            alt=""
-          />
-          <span>
-            <h1 class="font-extrabold">Straight fit jeans in white</h1>
-            <h1 class="sm:mt-5">
-          
-              <span class="font-bold ">Color:</span> White
-            </h1>
-            <h1>
-              {" "}
-              <span class="font-bold">Size:</span> XS
-            </h1>
-            <h1>
-              {" "}
-              <span class="font-bold">Quantity:</span> 1{" "}
-            </h1>
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6 hover:cursor-pointer"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
-              clip-rule="evenodd"
-            />
-          </svg>
+        <h1>{localStorage.getItem("name")}</h1>
+        <span class="sm:w-full">
+          <CartContent />
+          <CartContent />
         </span>
 
-        <span class="flex sm:flex-col-reverse justify-between mt-3 align-middle items-center">
-          <span>
-            <Counter />
-          </span>
-          <span class="font-bold text-xl">79.99 USD</span>
-        </span>
-      </div>
-      <div class="flex flex-col sm:flex-row sm:justify-between mt-8 sm:w-[800px]">
-        <hr class="sm:hidden " />
-        <span class="flex pt-4 gap-3 ">
-          <img
-            style={"width:104px;height:135px"}
-            src={All_items_data[1].image}
-            alt=""
-          />
-          <span>
-            <h1 class="font-extrabold">Straight fit jeans in white</h1>
-            <h1 class="sm:mt-5">
-              {" "}
-              <span class="font-bold">Color:</span> Flowers
-            </h1>
-            <h1>
-              {" "}
-              <span class="font-bold">Size:</span> XS
-            </h1>
-            <h1>
-              {" "}
-              <span class="font-bold">Quantity:</span> 1{" "}
-            </h1>
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6 hover:cursor-pointer"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
-
-        <span class="flex sm:flex-col-reverse justify-between mt-3 align-middle items-center">
-          <span>
-            <Counter />
-          </span>
-          <span class="font-bold text-xl">79.99 USD</span>
-        </span>
-      </div>
-      </span>
-      <span class="hidden sm:w-[384px] sm:p-4 sm:flex sm:flex-col bg-gray-100 ">
-<h1 class="text-3xl font-bold">Promo Code</h1>
-<input
+        <span class="hidden sm:w-[384px] sm:p-4 sm:flex sm:flex-col bg-gray-100 ">
+          <h1 class="text-3xl font-bold">Promo Code</h1>
+          <input
             placeholder="Enter Promo Code"
             style={"height:48px"}
             class="border w-[336px] mt-7  flex-row pl-4 pr-2  items-center rounded-3xl flex"
           />
-<h1 class="ml-4 mt-3 text-2xl font-bold">Order Of Price</h1>
-<div class="grid grid-cols-2 hidden sm:grid bg-gray-100 p-4 mt-2">
-        <div class=" flex flex-col">
-          
-          <p>Cost of the goods:</p>
-          <p>Delivery:</p>
-          <p>Discount Amount:</p>
-        </div>
+          <h1 class="ml-4 mt-3 text-2xl font-bold">Order Of Price</h1>
+          <div class="grid grid-cols-2 hidden sm:grid bg-gray-100 p-4 mt-2">
+            <div class=" flex flex-col">
+              <p>Cost of the goods:</p>
+              <p>Delivery:</p>
+              <p>Discount Amount:</p>
+            </div>
 
-        <div class=" flex flex-col items-end justify-end">
-        
-          <p>159,98 BYN</p>
-          <p>10 BYN</p>
-          <p>0</p>
-        </div>
+            <div class=" flex flex-col items-end justify-end">
+              <p>159,98 BYN</p>
+              <p>10 BYN</p>
+              <p>0</p>
+            </div>
+          </div>
 
-      
+          <hr />
+          <span class="flex ml-4 justify-between ">
+            <p class="font-bold">
+              {" "}
+              The Total Amount <br /> Of The Order:
+            </p>
+            <p class="  sm:font-bold">169.99 BYN</p>
+          </span>
 
-      </div>
-
-<hr />
-<span class="flex ml-4 justify-between ">
-<p class="font-bold"> The Total Amount <br /> Of The Order:</p>
-<p class="  sm:font-bold">169.99 BYN</p>
-</span>
-
-<a href="/shipping">
-<div
-       style={"height:48px"}
-       class="border w-full hidden sm:flex mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex ">
-        Go To Checkout
-    
-      </div>
-      </a>
+          <a href="/shipping">
+            <div
+              style={"height:48px"}
+              class="border w-full hidden sm:flex mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex "
+            >
+              Go To Checkout
+            </div>
+          </a>
+        </span>
       </span>
-      </span>
-     
-
-
-
       <div class="w-full sm:w-[800px] mt-20">
         <h1 class="text-3xl font-bold">Delivery</h1>
 
@@ -239,8 +145,6 @@ function cart() {
           />
         </span>
       </div>
-    
-     
       <div class="grid grid-cols-2  sm:hidden bg-gray-100 p-4 mt-8">
         <div class=" ">
           <p class="font-bold"> The Total Amount Of The Order:</p>
@@ -255,19 +159,16 @@ function cart() {
           <p>10 BYN</p>
           <p>0</p>
         </div>
-
-      
-
       </div>
       <a href="/shipping">
-      <div
-       style={"height:48px"}
-       class="border w-[200px] sm:hidden mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex ">
-         Go To Checkout
-    
-      </div>
+        <div
+          style={"height:48px"}
+          class="border w-[200px] sm:hidden mt-7 text-white bg-black flex-row pl-4 pr-2 justify-center items-center rounded-3xl flex "
+        >
+          Go To Checkout
+        </div>
       </a>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

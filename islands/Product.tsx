@@ -6,6 +6,8 @@ import Navbar from "../islands/Navbar.tsx";
 import Footer from "../components/Footer.tsx";
 import Section_Bar from "./Section_bar.tsx  ";
 
+
+
 function Product({ data }) {
   const [counter, setCounter] = useState(1);
   const [current_color, setColor] = useState("white");
@@ -579,6 +581,10 @@ function Product({ data }) {
                 <button
                   class=" bg-black flex justify-center gap-2 items-center align-middle text-white rounded-full"
                   style={"width:312px;height:48px"}
+                  onClick={()=>{
+                    alert("Added to cart")
+                    localStorage.setItem("name","First Product")
+                  }}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

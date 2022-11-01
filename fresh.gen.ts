@@ -15,11 +15,13 @@ import * as $8 from "./routes/products/catalogue/[Al_1].tsx";
 import * as $9 from "./routes/products/new/[Al_4].tsx";
 import * as $10 from "./routes/products/womencloth/[Al_2].tsx";
 import * as $11 from "./routes/shipping.tsx";
-import * as $$0 from "./islands/Counter.tsx";
-import * as $$1 from "./islands/ImageSlider.tsx";
-import * as $$2 from "./islands/Navbar.tsx";
-import * as $$3 from "./islands/Product.tsx";
-import * as $$4 from "./islands/Section_bar.tsx";
+import * as $12 from "./routes/wishlist.tsx";
+import * as $$0 from "./islands/CartContent.tsx";
+import * as $$1 from "./islands/Counter.tsx";
+import * as $$2 from "./islands/ImageSlider.tsx";
+import * as $$3 from "./islands/Navbar.tsx";
+import * as $$4 from "./islands/Product.tsx";
+import * as $$5 from "./islands/Section_bar.tsx";
 
 const manifest = {
   routes: {
@@ -35,13 +37,15 @@ const manifest = {
     "./routes/products/new/[Al_4].tsx": $9,
     "./routes/products/womencloth/[Al_2].tsx": $10,
     "./routes/shipping.tsx": $11,
+    "./routes/wishlist.tsx": $12,
   },
   islands: {
-    "./islands/Counter.tsx": $$0,
-    "./islands/ImageSlider.tsx": $$1,
-    "./islands/Navbar.tsx": $$2,
-    "./islands/Product.tsx": $$3,
-    "./islands/Section_bar.tsx": $$4,
+    "./islands/CartContent.tsx": $$0,
+    "./islands/Counter.tsx": $$1,
+    "./islands/ImageSlider.tsx": $$2,
+    "./islands/Navbar.tsx": $$3,
+    "./islands/Product.tsx": $$4,
+    "./islands/Section_bar.tsx": $$5,
   },
   baseUrl: import.meta.url,
   config,
