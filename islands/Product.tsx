@@ -11,6 +11,16 @@ import Section_Bar from "./Section_bar.tsx  ";
 function Product({ data }) {
   const [counter, setCounter] = useState(1);
   const [current_color, setColor] = useState("white");
+
+const addProduct=()=>{
+  localStorage.setItem(
+    "Fresh Project Manager: "+data.name,
+    JSON.stringify({title:data.name,color:current_color,size:"XL",quantity:counter})
+  )
+  window.location.href="/cart"
+}
+
+
   const increment = () => {
     setCounter(counter + 1);
   };
@@ -191,6 +201,7 @@ function Product({ data }) {
         <button
           class="mt-8 bg-black flex justify-center gap-2 items-center align-middle text-white rounded-full"
           style={"width:312px;height:48px"}
+          onClick={addProduct}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -583,7 +594,7 @@ function Product({ data }) {
                   style={"width:312px;height:48px"}
                   onClick={()=>{
                     alert("Added to cart")
-                    localStorage.setItem("name","First Product")
+                    addProduct()
                   }}
                 >
                   <svg

@@ -7,7 +7,7 @@ import CartContent from "../islands/CartContent.tsx";
 function cart() {
   return (
     <div class="flex relative mx-auto flex-col w-[360px] sm:w-[1770px]  items-center sm:items-start">
-      <Navbar />=
+      <Navbar />
       <span class=" w-full ">
         <p class="text-sm  text-gray-500">Home/Cart</p>
         <h1 class="text-3xl font-bold">Cart</h1>
@@ -16,7 +16,6 @@ function cart() {
       <span class="sm:flex  sm:w-full sm:justify-end">
         <h1>{localStorage.getItem("name")}</h1>
         <span class="sm:w-full">
-          <CartContent />
           <CartContent />
         </span>
 
