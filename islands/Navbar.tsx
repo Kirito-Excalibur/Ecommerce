@@ -69,7 +69,7 @@ function Navbar() {
         <ul class="flex gap-60  items-center ">
           <li class="hidden hover:border-b-4 hover:border-black sm:block">
             {" "}
-            <a href=""> Women</a>
+            <a href="/catalogue"> Women</a>
           </li>
           <li class="hidden hover:border-b-4 hover:border-black sm:block">
             {" "}

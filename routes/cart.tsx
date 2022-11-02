@@ -14,8 +14,8 @@ function cart() {
         <p class="sm:hidden">You have 2 items in your cart</p>
       </span>
       <span class="sm:flex  sm:w-full sm:justify-end">
-        <h1>{localStorage.getItem("name")}</h1>
-        <span class="sm:w-full">
+      
+        <span class="w-full">
           <CartContent />
         </span>
 
