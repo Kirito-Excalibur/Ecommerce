@@ -2,11 +2,11 @@ import { NewData } from "./NewData.tsx";
 function New() {
   return (
     <div>
-      <div id="new" class=" mx-auto  w-[360px] sm:w-[1770px]">
-        <h1 class="mt-24 ml-10 text-2xl font-bold sm:ml-[27rem]">New</h1>
+      <div id="new" class=" mx-auto  w-[360px] sm:w-full">
+        <h1 class="mt-24 ml-10 text-2xl font-bold sm:ml-[13rem] ">New</h1>
         <span class="flex flex-wrap mt-8 gap-5 justify-center">
           <span class="flex flex-wrap justify-center gap-4">
-            {NewData.slice(0,4).map((item) => {
+            {NewData.slice(0, 4).map((item) => {
               return (
                 <a href={item.address}>
                   {" "}
@@ -21,7 +21,7 @@ function New() {
           </span>
 
           <span class="hidden gap-4 sm:flex">
-          {NewData.slice(4,8).map((item) => {
+            {NewData.slice(4, 8).map((item) => {
               return (
                 <a href={item.address}>
                   {" "}

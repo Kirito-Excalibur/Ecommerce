@@ -1,23 +1,21 @@
-
 import { BestSellerData } from "./BestSellerData.tsx";
 function Bestseller() {
   return (
     <div>
-      <div id="best-sellers" class=" mx-auto w-[360px] sm:w-[1770px] " >
-        <h1 class="mt-24 text-2xl font-bold ml-10 sm:ml-[27rem]">Best Sellers</h1>
+      <div id="best-sellers" class=" mx-auto w-[360px] sm:w-full ">
+        <h1 class="mt-24 ml-10 text-2xl font-bold sm:ml-[13rem]">
+          Best Sellers
+        </h1>
         <span class="flex flex-wrap  mt-8 gap-5 justify-center">
           {BestSellerData.map((item, index) => {
             return (
-              
               <a href={item.address}>
-              
-              <img
-                src={item.image}
-                class="w-36 rounded-xl transition ease-in-out sm:w-[280px] sm:h-[400px]  hover:-translate-y-1 hover:scale-110  hover:duration-100 hover:cursor-pointer "
-                alt=""
-              />
-</a>
-
+                <img
+                  src={item.image}
+                  class="w-36 rounded-xl transition ease-in-out sm:w-[280px] sm:h-[400px]  hover:-translate-y-1 hover:scale-110  hover:duration-100 hover:cursor-pointer "
+                  alt=""
+                />
+              </a>
             );
           })}
         </span>

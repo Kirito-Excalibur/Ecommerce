@@ -13,7 +13,7 @@ export default function Home() {
   const A = "THERE ARE CLOTHES FOR EVERYONE";
   const B = "THERE WILL BE CLOTHES FOR EVERYONE";
   return (
-    <body class="flex mx-auto w-[360px] select-none  flex-col items-center justify-center sm:w-[1770px]">
+    <body class="flex  w-full  select-none  flex-col ">
       <Navbar />
       <div class="sm:flex sm:gap-20">
         <span>
@@ -29,27 +29,25 @@ export default function Home() {
             THERE WILL BE <br /> CLOTHES <br /> FOR EVERYONE
           </h1>
           <h1 class=""></h1>
-          <p class="mt-5 sm:text-[24px] sm:text-center">Pay for only what suits you</p>
+          <p class="mt-5 sm:text-[24px] sm:text-center">
+            Pay for only what suits you
+          </p>
           <span class="flex justify-center gap-6 sm:gap-36">
-            <a href=""   style={"height:48px"}
-              class="border w-1/2 mt-7 bg-[#F6B750]   justify-center items-center rounded-3xl flex sm:w-1/4">
-            <span
-            
+            <a
+              href=""
+              style={"height:48px"}
+              class="border w-1/2 mt-7 bg-[#F6B750]   justify-center items-center rounded-3xl flex sm:w-1/4"
             >
-              
-              For Men
-            </span>
+              <span>For Men</span>
             </a>
-          
-          <a href=""  style={"height:48px"}
-              class="border w-1/2 mt-7 bg-[#F6B750]    justify-center items-center rounded-3xl flex sm:w-1/4">
-          <span
-             
+
+            <a
+              href=""
+              style={"height:48px"}
+              class="border w-1/2 mt-7 bg-[#F6B750]    justify-center items-center rounded-3xl flex sm:w-1/4"
             >
-              For Women
-            </span>
-          </a>
-         
+              <span>For Women</span>
+            </a>
           </span>
         </span>
       </div>
