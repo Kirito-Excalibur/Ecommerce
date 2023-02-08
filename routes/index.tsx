@@ -44,7 +44,7 @@ export default function Home() {
             <a
               href=""
               style={"height:48px"}
-              class="border w-1/2 mt-7 bg-[#F6B750]    justify-center items-center rounded-3xl flex sm:w-1/4"
+              class="border w-1/2 mt-7 bg-[#F6B750] justify-center items-center rounded-3xl flex sm:w-1/4"
             >
               <span>For Women</span>
             </a>
