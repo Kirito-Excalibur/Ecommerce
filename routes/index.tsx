@@ -20,7 +20,7 @@ export default function Home() {
           <img
             src="/images/Index_scrn.png"
             alt=""
-            class="w-[360px] rounded-3xl sm:h-[809px] sm:w-[597px] sm:rounded-none sm:rounded-tr-[250px]"
+            class="w-full rounded-3xl sm:h-[809px] sm:w-[597px] sm:rounded-none sm:rounded-tr-[250px]"
           />
         </span>
         <span>
