@@ -30,8 +30,10 @@ const addProduct=()=>{
   };
 
   return (
-    <div class="flex relative justify-center items-center mx-auto flex-col w-[360px] sm:w-[1770px]">
-      <Navbar />
+    <div class="flex relative justify-center items-center mx-auto flex-col w-[360px] sm:w-full">
+     <span class=" w-full">
+        <Navbar />
+      </span>
       <div class="flex mx-auto justify-center flex-col items-center sm:hidden">
         <span class="w-full">
           <p class="text-sm  text-gray-500">Home/Women/{data.name}</p>
@@ -730,7 +732,9 @@ const addProduct=()=>{
           </div>
         </div>
       </span>
-      <Footer />
+      <span class="w-[420px] sm:w-full">
+        <Footer />
+      </span>
     </div>
   );
 }

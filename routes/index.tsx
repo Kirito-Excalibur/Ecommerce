@@ -13,7 +13,7 @@ export default function Home() {
   const A = "THERE ARE CLOTHES FOR EVERYONE";
   const B = "THERE WILL BE CLOTHES FOR EVERYONE";
   return (
-    <body class="flex  w-full  select-none  flex-col ">
+    <body class="flex mx-auto w-full  select-none  flex-col ">
       <Navbar />
       <div class="sm:flex sm:gap-20">
         <span>

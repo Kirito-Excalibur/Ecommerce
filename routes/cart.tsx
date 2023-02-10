@@ -6,15 +6,16 @@ import CartContent from "../islands/CartContent.tsx";
 
 function cart() {
   return (
-    <div class="flex relative mx-auto flex-col w-[360px] sm:w-[1770px]  items-center sm:items-start">
-      <Navbar />
+    <div class="flex relative mx-auto flex-col w-[360px] sm:w-full  items-center sm:items-start">
+      <span class=" w-full">
+        <Navbar />
+      </span>
       <span class=" w-full ">
         <p class="text-sm  text-gray-500">Home/Cart</p>
         <h1 class="text-3xl font-bold">Cart</h1>
         <p class="sm:hidden">You have 2 items in your cart</p>
       </span>
       <span class="sm:flex  sm:w-full sm:justify-end">
-      
         <span class="w-full">
           <CartContent />
         </span>
@@ -167,7 +168,9 @@ function cart() {
           Go To Checkout
         </div>
       </a>
-      <Footer />
+      <span class="w-[420px] sm:w-full">
+        <Footer />
+      </span>
     </div>
   );
 }
