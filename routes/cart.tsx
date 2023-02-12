@@ -8,7 +8,7 @@ function cart() {
   return (
     <div class="flex relative mx-auto flex-col w-[360px] sm:w-full  items-center sm:items-start">
       <span class=" w-full">
-        <Navbar />
+        {/* <Navbar /> */}
       </span>
       <span class=" w-full ">
         <p class="text-sm  text-gray-500">Home/Cart</p>
